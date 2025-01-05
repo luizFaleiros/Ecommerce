@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user
+  session:
+    redis:
+      flush-mode: on_save
+      namespace: spring:session
+  data:
+    redis:
+      host: localhost
+      password: session
+      port: 6379
+server:
+  servlet:
+    session:
+      timeout: 60000
